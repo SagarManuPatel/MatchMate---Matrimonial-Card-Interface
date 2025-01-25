@@ -39,3 +39,26 @@ MatchMate is a matrimonial iOS app that simulates a matchmaking interface, featu
  - View: SwiftUI views for rendering UI components.
 
  - ViewModel: Manages business logic, API calls, and Core Data interactions.
+
+------ Installation :
+
+ - Clone the repository:
+
+ - git clone <repository_url>
+
+ - Open the project in Xcode:
+
+   cd MatchMate
+   open MatchMate.xcodeproj
+
+ - Build and run the project in the iOS Simulator or a physical device.
+
+-----  Usage :
+
+ - Launch the app to view a list of user profiles.
+
+ - Swipe through the profiles or interact with action buttons (Accept/Decline).
+
+ - Decisions are stored locally and reflected in the UI.
+
+ - Data syncs with the API when the internet connection is available.
