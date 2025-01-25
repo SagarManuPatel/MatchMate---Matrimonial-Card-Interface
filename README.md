@@ -4,7 +4,7 @@ Overview
 
 MatchMate is a matrimonial iOS app that simulates a matchmaking interface, featuring profile cards. Users can view profiles, accept or decline matches, and the app persistently stores user decisions even in offline mode using Core Data.
 
-* Features :
+----- Features :
 
  - API Integration: Fetches user profiles using https://randomuser.me/api/?results=10.
 
@@ -22,7 +22,7 @@ MatchMate is a matrimonial iOS app that simulates a matchmaking interface, featu
 
  - Error Handling: Handles errors gracefully for API calls, database operations, and network issues.
 
-* Libraries Used :
+----- Libraries Used :
 
  - SwiftUI: For building the user interface.
 
@@ -30,7 +30,7 @@ MatchMate is a matrimonial iOS app that simulates a matchmaking interface, featu
 
  - Core Data: For offline storage and local database management.
 
-* Architecture :
+------ Architecture :
 
  - MVVM (Model-View-ViewModel):
 
