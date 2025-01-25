@@ -22,7 +22,7 @@ struct MatchListView: View {
                     )
                 }
             }
-            .navigationTitle("MatchMate")
+            .navigationTitle("Match Mate")
         }
     }
 }
