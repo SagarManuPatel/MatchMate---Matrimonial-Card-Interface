@@ -14,7 +14,7 @@ class FindMatchService {
         self.apiService = apiService
     }
     
-    func fetchMatches() -> AnyPublisher<APIResponse, Error> {
-        apiService.fetch(endpoint: "", type: APIResponse.self)
+    func fetchMatches(endPoint: String = "") -> AnyPublisher<APIResponse, Error> {
+        apiService.fetch(endpoint: endPoint, type: APIResponse.self)
     }
 }

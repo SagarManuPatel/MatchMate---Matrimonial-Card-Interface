@@ -15,7 +15,7 @@ class MatchViewModel: ObservableObject {
     private var service: FindMatchService
     
     init() {
-        self.service = FindMatchService(apiService: ApiService(baseURL: "https://randomuser.me/api/?results=10"))
+        self.service = FindMatchService(apiService: ApiService(baseURL: URLConstants.baseURL))
         fetchProfilesFromAPI()
         fetchCachedProfiles()
     }
@@ -27,7 +27,7 @@ class MatchViewModel: ObservableObject {
     
     // MARK: - Fetch Profiles from API
     func fetchProfilesFromAPI() {
-        service.fetchMatches()
+        service.fetchMatches(endPoint: URLConstants.findMatchEndPoint)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {

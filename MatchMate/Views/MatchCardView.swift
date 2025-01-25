@@ -39,10 +39,14 @@ struct MatchCardView: View {
             }
             
             Text("\(user.firstName ?? "") \(user.lastName ?? "")")
+                .multilineTextAlignment(.center)
                 .font(.headline)
+                .padding(.top, 4)
             
             Text("\(user.city ?? "") \(user.state ?? "") \(user.country ?? "")")
+                .multilineTextAlignment(.center)
                 .font(.subheadline)
+                .foregroundColor(Color.secondary)
             
             
             HStack {
@@ -56,7 +60,7 @@ struct MatchCardView: View {
                     .padding()
                     .background(user.status == UserStatus.accepted.rawValue ? Color.green : Color.white)
                     .cornerRadius(8)
-                    .shadow(radius: 2)
+                    .shadow(radius: 1)
                 }
                 .buttonStyle(PlainButtonStyle())
                 
@@ -70,10 +74,10 @@ struct MatchCardView: View {
                     .padding()
                     .background(user.status == UserStatus.declined.rawValue ? Color.red : Color.white)
                     .cornerRadius(8)
-                    .shadow(radius: 2)
+                    .shadow(radius: 1)
                 }
                 .buttonStyle(PlainButtonStyle())
-            }
+            }.padding(.top, 8)
 
         }
         .padding()
